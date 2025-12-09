@@ -18,11 +18,13 @@ export default function Navbar() {
         <Link href="/" className="flex items-center cursor">
           <div className="relative w-[150px] h-10 md:w-[200px] md:h-[60px]">
             <Image
-              src="/logo.png"
+              src="/Logo.png"
               alt="midpoint logo"
               fill
               className="object-contain"
+              sizes="(max-width: 768px) 150px, 200px"
               priority
+              quality={80}
             />
           </div>
         </Link>

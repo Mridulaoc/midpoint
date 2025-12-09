@@ -19,11 +19,13 @@ export default function Footer() {
           <Link href="/" className="flex items-center">
             <div className="relative w-[120px] h-10 sm:w-[150px] sm:h-[50px] md:w-[200px] md:h-[60px]">
               <Image
-                src="/logo.png"
+                src="/Logo.png"
                 alt="midpoint logo"
                 fill
                 className="object-contain"
+                sizes="(max-width: 768px) 150px, 200px"
                 priority
+                quality={80}
               />
             </div>
           </Link>
