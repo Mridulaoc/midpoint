@@ -4,9 +4,14 @@ export interface CloudinaryResource {
   width: number;
   height: number;
   context?: {
+    caption?: string;
     custom?: {
       title?: string;
     };
+  };
+  metadata?: {
+    title?: string;
+    [key: string]: unknown;
   };
 }
 

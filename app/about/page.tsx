@@ -39,8 +39,8 @@ export default async function AboutPage() {
         </div>
 
         {/* Right Column - Photo */}
-        <div className="flex justify-center md:justify-end items-center md:col-span-1">
-          <div className="relative w-full  h-[450px]  overflow-hidden ">
+        <div className="flex justify-center md:justify-end items-stretch md:col-span-1">
+          <div className="relative w-full h-full  min-h-[450px]  overflow-hidden ">
             <Image
               src={profileImage.url}
               alt="Photographer"
@@ -54,9 +54,7 @@ export default async function AboutPage() {
 
       {/* Testimonials Section */}
       <section className="bg-black py-20">
-        <h2 className="text-4xl font-semibold text-center mb-10">
-          What Clients Are Saying
-        </h2>
+        <h3 className="  text-center mb-10">What Clients Are Saying</h3>
         <hr className="w-20 h-0.5 bg-[#C67A2B] border-0 mx-auto mt-4" />
         <TestimonialsCarousel />
       </section>

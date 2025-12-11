@@ -32,7 +32,7 @@ h5 {
 }
 
 p {
-  @apply font-montserrat text-sm md:text-base text-gray-700;
+  @apply font-montserrat text-xs md:text-base text-gray-700;
 }
 
 a {
@@ -54,4 +54,18 @@ a {
   width: 12px !important;
   height: 12px !important;
   background: #c67a2b !important;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.8s ease-out forwards;
 }

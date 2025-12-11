@@ -2,9 +2,6 @@ import nodemailer from "nodemailer";
 
 export async function POST(request: Request) {
   try {
-    console.log("EMAIL_USER:", process.env.EMAIL_USER);
-    console.log("EMAIL_PASS:", process.env.EMAIL_PASS ? "Loaded" : "Missing");
-
     const { firstName, lastName, email, subject, message } =
       await request.json();
 

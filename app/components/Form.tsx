@@ -24,8 +24,8 @@ export default function Form() {
     }
   };
   return (
-    <div className="bg-white  md:px-12  md:col-span-2  text-justify text-gray-700">
-      <div className="max-w-3xl mx-auto px-6 bg-white  ">
+    <div className="bg-white    md:col-span-2  text-justify text-gray-700">
+      <div className="max-w-3xl mx-auto  bg-white  ">
         <form
           className="grid grid-cols-1 md:grid-cols-2 gap-6 font-montserrat"
           onSubmit={handleSubmit}

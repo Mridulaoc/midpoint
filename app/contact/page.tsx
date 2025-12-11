@@ -7,12 +7,12 @@ export default function ContactPage() {
     <main className="bg-black text-white pb-24">
       {/* Headline Section */}
       <section className="py-20 text-center">
-        <h1 className="text-5xl font-semibold tracking-wide">Get In Touch</h1>
+        <h2 className=" font-semibold tracking-wide">Get In Touch</h2>
         <hr className="w-20 h-0.5 bg-[#C67A2B] border-0 mx-auto mt-4" />
       </section>
 
       {/* Contact Form + Contact details */}
-      <section className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-16 px-6 pt-32 pb-16 bg-white ">
+      <section className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3  gap-16 px-10 pt-32 pb-16 bg-white ">
         {/* Contact details  */}
         <div className="bg-white text-justify md:px-8  flex flex-col gap-2   text-black">
           <h5 className="text-lg! text-gray-700 leading-relaxed tracking-normal mb-5 ">

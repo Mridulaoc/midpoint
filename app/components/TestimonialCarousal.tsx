@@ -6,16 +6,16 @@ import { Pagination, Autoplay } from "swiper/modules";
 export default function TestimonialsCarousel() {
   const testimonials = [
     {
-      text: "Absolutely stunning work! The photos captured emotions I didn’t even realize at the moment.",
-      author: "Priya R.",
+      text: "Sidharth is very professional, organized and understood the brief to deliver it efficiently. He was able to help us with our corporate requirement and delivered great quality pictures that were appreciated both by internal teams and our clients at the conference. I would definitely recommend him for any creative services.",
+      author: "Ranjana Pillai.",
     },
     {
-      text: "Very professional, creative, and easy to work with. Highly recommend!",
-      author: "Rahul V.",
+      text: "It’s always a pleasure to work with Sidhu.. he makes amazing frames and has this magic to make the client go wow when he delivers the end product. His experience working with national and international clients makes him one of the best in the industry.",
+      author: "Jithin Babu.",
     },
     {
-      text: "The final edits were beyond my expectations. A true artist.",
-      author: "Divya S.",
+      text: "Siddharth has done a couple of projects for me. I must say he is fantastic at his job. He spends time with you before the start of the project to understand your requirements, perspective, shares his inputs and rest what you see as a final product is just MAGIC!! He has an eye for detail and his OCD will not let him compromise on any frame. The final product will that he shares has always exceeded my expectations. I highly recommend him!!!.",
+      author: "Rajeswari Jayaraman.",
     },
   ];
 
