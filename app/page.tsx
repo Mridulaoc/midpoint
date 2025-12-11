@@ -80,7 +80,7 @@ export default async function Home() {
 
         <hr className="w-32 md:w-40 h-0.5 bg-[#C67A2B] border-0 mt-3" />
 
-        <h5 className="text-sm md:text-base tracking-widest uppercase mt-4">
+        <h5 className="text-sm! md:text-base tracking-widest uppercase mt-4">
           capturing timeless beauty
         </h5>
 
