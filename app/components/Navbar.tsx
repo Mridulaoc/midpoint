@@ -5,6 +5,21 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
+const links = [
+  {
+    label: "Portfolio",
+    href: "/portfolio",
+  },
+  {
+    label: "About",
+    href: "/about",
+  },
+  {
+    label: "Contact",
+    href: "/contact",
+  },
+];
+
 export default function Navbar() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
@@ -54,19 +69,18 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-8 items-center uppercase text-sm">
-          {["/portfolio", "/about", "/contact"].map((link) => (
-            <li key={link}>
+          {links.map((link) => (
+            <li key={link.href}>
               <Link
-                href={link}
+                href={link.href}
                 className={`text-black font-medium relative pb-1 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-[#C67A2B] after:transition-all after:duration-500
                 ${
-                  isActive(link)
+                  isActive(link.href)
                     ? "after:w-full"
                     : "after:w-0 hover:after:w-full"
                 }`}
               >
-                {link.replace("/", "").charAt(0).toUpperCase() +
-                  link.replace("/", "").slice(1)}
+                {link.label}
               </Link>
             </li>
           ))}
@@ -76,20 +90,19 @@ export default function Navbar() {
       {/* Mobile Dropdown */}
       {open && (
         <ul className="md:hidden flex flex-col gap-6 px-6 pb-6 text-sm uppercase tracking-wide">
-          {["/portfolio", "/about", "/contact"].map((link) => (
-            <li key={link}>
+          {links.map((link) => (
+            <li key={link.href}>
               <Link
-                href={link}
+                href={link.href}
                 onClick={() => setOpen(false)}
                 className={`block w-fit text-black text-xs relative pb-1 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-[#C67A2B] after:transition-all after:duration-500
                 ${
-                  isActive(link)
+                  isActive(link.href)
                     ? "after:w-full"
                     : "after:w-0 hover:after:w-full"
                 }`}
               >
-                {link.replace("/", "").charAt(0).toUpperCase() +
-                  link.replace("/", "").slice(1)}
+                {link.label}
               </Link>
             </li>
           ))}

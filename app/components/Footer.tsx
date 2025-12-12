@@ -9,6 +9,21 @@ import {
   FaLinkedinIn,
 } from "react-icons/fa";
 
+const links = [
+  {
+    label: "Portfolio",
+    href: "/portfolio",
+  },
+  {
+    label: "About",
+    href: "/about",
+  },
+  {
+    label: "Contact",
+    href: "/contact",
+  },
+];
+
 export default function Footer() {
   return (
     <footer className="bg-white border-t border-gray-200 ">
@@ -35,12 +50,7 @@ export default function Footer() {
             className="flex flex-col items-center gap-4 text-xs 
   sm:text-sm sm:flex-row sm:flex-wrap sm:gap-6 uppercase tracking-wide"
           >
-            {[
-              { label: "Home", href: "/" },
-              { label: "Portfolio", href: "/portfolio" },
-              { label: "About", href: "/about" },
-              { label: "Contact", href: "/contact" },
-            ].map((link) => (
+            {links.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
