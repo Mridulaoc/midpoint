@@ -11,7 +11,7 @@ export default function Button({
   ...props
 }: ButtonProps) {
   const baseStyles =
-    "px-8 py-3 rounded-md font-medium tracking-wide transition-all duration-300 cursor-pointer";
+    "px-8 py-3 rounded-md font-medium text-xs! md:text-base! tracking-wide transition-all duration-300 cursor-pointer";
 
   const variants = {
     primary: "bg-[#C67A2B] text-white hover:bg-[#a86422]",
