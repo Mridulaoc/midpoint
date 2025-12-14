@@ -1,4 +1,3 @@
-// app/portfolio/[category]/photo/[imageId]/page.tsx
 import Image from "next/image";
 import { getImages } from "@/app/lib/getImages";
 import Link from "next/link";
