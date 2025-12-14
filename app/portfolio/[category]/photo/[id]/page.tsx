@@ -11,11 +11,6 @@ export default async function FullImagePage({
 
   const images = await getImages(`portfolio/${category}`);
   const img = images.find((i) => i.id === id);
-  console.log("Full Page - Total images found:", images.length);
-  console.log(
-    "Full Page - Image IDs:",
-    images.map((i) => i.id)
-  );
 
   if (!img) return null;
 

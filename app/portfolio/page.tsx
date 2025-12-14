@@ -12,7 +12,7 @@ export default async function PortfolioPage() {
       </h2>
       <hr className="w-20 h-0.5 bg-[#C67A2B] border-0 mx-auto mt-4 mb-12" />
 
-      <div className="grid grid-cols-1 gap-10 md:gap-32 md:mt-20  max-w-6xl mx-auto px-6">
+      <div className="grid grid-cols-3 gap-10 md:gap-32 md:mt-20  max-w-6xl mx-auto px-6">
         {categoryImages.map((cat) => (
           <Link
             key={cat.id}
@@ -21,8 +21,8 @@ export default async function PortfolioPage() {
             <div className="group cursor-pointer">
               {cat.url && (
                 <div
-                  className="relative w-full  overflow-hidden  group"
-                  style={{ paddingTop: `${(cat.height / cat.width) * 100}%` }}
+                  className="relative w-full h-[500px]  overflow-hidden  group "
+                  // style={{ paddingTop: `${(cat.height / cat.width) * 100}%` }}
                 >
                   <Image
                     src={cat.url}

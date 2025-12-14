@@ -1,7 +1,7 @@
-// app/portfolio/[category]/@modal/(.)photo/[imageId]/page.tsx
 import Image from "next/image";
 import { getImages } from "@/app/lib/getImages";
 import Link from "next/link";
+import CloseModal from "@/app/components/CloseModal";
 
 export default async function ImageModal({
   params,
@@ -18,17 +18,13 @@ export default async function ImageModal({
     "Modal - Image IDs:",
     images.map((i) => i.id)
   );
+  console.log("Category is :", category);
 
   if (!img) return null;
 
   return (
     <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-6">
-      <Link
-        href={`/portfolio/${category}`}
-        className="absolute top-6 right-6 text-white text-3xl hover:text-gray-300 transition-colors"
-      >
-        ✕
-      </Link>
+      <CloseModal />
 
       <div className="relative w-full max-w-4xl h-auto">
         <Image
