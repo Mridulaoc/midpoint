@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { getImages } from "@/app/lib/getImages";
-import Link from "next/link";
+
 import CloseModal from "@/app/components/CloseModal";
 
 export default async function ImageModal({
@@ -12,13 +12,6 @@ export default async function ImageModal({
 
   const images = await getImages(`portfolio/${category}`);
   const img = images.find((i) => i.id === id);
-
-  console.log("Modal - Total images found:", images.length);
-  console.log(
-    "Modal - Image IDs:",
-    images.map((i) => i.id)
-  );
-  console.log("Category is :", category);
 
   if (!img) return null;
 
