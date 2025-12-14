@@ -12,7 +12,7 @@ export default async function PortfolioPage() {
       </h2>
       <hr className="w-20 h-0.5 bg-[#C67A2B] border-0 mx-auto mt-4 mb-12" />
 
-      <div className="grid grid-cols-3 gap-10 md:gap-32 md:mt-20  max-w-6xl mx-auto px-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-32 md:mt-20  max-w-6xl mx-auto px-6">
         {categoryImages.map((cat) => (
           <Link
             key={cat.id}
