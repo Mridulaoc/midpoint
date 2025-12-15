@@ -38,7 +38,7 @@ export default function Navbar() {
               fill
               className="object-contain"
               sizes="(max-width: 768px) 150px, 200px"
-              priority
+              priority={true}
               quality={80}
             />
           </div>

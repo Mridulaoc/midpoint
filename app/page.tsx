@@ -24,7 +24,7 @@ export default async function Home() {
         src={hero.url}
         alt="Hero"
         fill
-        priority
+        priority={true}
         className="object-cover md:object-center object-[50%_30%]"
       />
 
