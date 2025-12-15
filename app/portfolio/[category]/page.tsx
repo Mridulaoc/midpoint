@@ -54,7 +54,7 @@ export default async function CategoryPage({
                       {/* Content on hover */}
                       <div className="absolute bottom-0 left-0 right-0 p-8 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
                         {img.title && (
-                          <h3 className="text-white text-2xl font-semibold mb-4 tracking-wide">
+                          <h3 className="text-white text-2xl font-semibold! mb-4 tracking-wide">
                             {img.title}
                           </h3>
                         )}

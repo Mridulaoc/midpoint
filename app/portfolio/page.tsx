@@ -20,10 +20,7 @@ export default async function PortfolioPage() {
           >
             <div className="group cursor-pointer">
               {cat.url && (
-                <div
-                  className="relative w-full h-[500px]  overflow-hidden  group "
-                  // style={{ paddingTop: `${(cat.height / cat.width) * 100}%` }}
-                >
+                <div className="relative w-full h-[500px]  overflow-hidden  group ">
                   <Image
                     src={cat.url}
                     alt={cat.title || "Portfolio Category"}
@@ -32,7 +29,9 @@ export default async function PortfolioPage() {
                   />
                   <div className="absolute inset-0 bg-black/40 md:bg-black/0 md:group-hover:bg-black/60 transition duration-500"></div>
                   <div className="absolute inset-0 flex items-center justify-center opacity-100 md:opacity-0 md:group-hover:opacity-100 transition duration-500">
-                    <h2 className="text-white  tracking-wide ">{cat.title}</h2>
+                    <h3 className="text-white font-semibold!  tracking-wide ">
+                      {cat.title}
+                    </h3>
                   </div>
                 </div>
               )}
