@@ -17,24 +17,25 @@ export default async function AboutPage() {
         {/* Left Column - Text */}
         <div className="bg-white  md:px-12 py-16 md:col-span-2 text-justify">
           <h3 className="text-3xl md:text-4xl font-semibold text-center text-black tracking-wide mb-6">
-            Meet the Photographer
+            Meet Sidharth
           </h3>
 
           <p className="text-gray-700 leading-relaxed tracking-normal mb-4 text-justify px-6">
-            With a passion for capturing raw emotions and authentic stories, I
-            have been documenting life’s fleeting moments through my lens for
-            over 7+ years. My work blends creativity, minimalism, and natural
-            aesthetics to create images that feel timeless.
+            “Moments, though fleeting, can be captured” is probably his motto.
+            What his eyes can see and soul can feel, his camera immortalises.
           </p>
 
           <p className="text-gray-700 leading-relaxed tracking-normal mb-4 text-justify px-6">
-            Whether it’s portraits, nature, lifestyle, or storytelling imagery,
-            my goal is to create photographs that make you feel something — a
-            memory, a connection, a moment in time.
+            Sidharth’s passion doesn’t just extend to photography but to life
+            itself. What he captures aren’t mere photographs but stories and
+            experiences. Every single conversation and moment he has spent with
+            his muse can be seen in his works. After all, what is a photograph
+            if not the timelessness of a lifetime captured!
           </p>
 
           <p className="text-gray-700 leading-relaxed tracking-normal text-justify px-6">
-            Based in Bangalore, available for freelance and commissioned work.
+            He might be based in Bangalore but he carries the heritage of places
+            far travelled in his frames.
           </p>
         </div>
 
