@@ -22,8 +22,7 @@ export async function POST(request: Request) {
     // Email content
     const mailOptions = {
       from: `Midpoint Art <${process.env.EMAIL_USER}>`,
-      // to: process.env.TO_EMAIL,
-      to: "mridulaOC@gmail.com",
+      to: process.env.TO_EMAIL,
       subject: `New Contact Form Submission: ${subject}`,
       replyTo: email,
       text: `
