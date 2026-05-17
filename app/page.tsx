@@ -12,7 +12,7 @@ export default async function Home() {
         alt="Hero"
         fill
         priority={true}
-        className="object-cover object-center"
+        className="object-contain sm:object-cover object-center"
       />
     </section>
   );
