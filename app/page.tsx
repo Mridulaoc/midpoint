@@ -31,10 +31,10 @@ export default async function Home() {
       />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/40"></div>
+      {/* <div className="absolute inset-0 bg-black/40"></div> */}
 
       {/* Text */}
-      <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-white px-4 text-center">
+      {/* <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-white px-4 text-center">
         <h1
           className={`text-4xl md:text-6xl font-semibold ${headlineFont.className}`}
         >
@@ -50,7 +50,7 @@ export default async function Home() {
         <Link href="/portfolio">
           <Button className="mt-6">View Portfolio</Button>
         </Link>
-      </div>
+      </div> */}
     </section>
   );
 }
