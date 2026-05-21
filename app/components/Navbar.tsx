@@ -33,7 +33,7 @@ export default function Navbar() {
         <Link href="/" className="flex items-center cursor">
           <div className="relative w-[150px] h-10 md:w-[200px] md:h-[60px]">
             <Image
-              src="/Logo.png"
+              src="/logo.jpeg"
               alt="midpoint logo"
               fill
               className="object-contain"
