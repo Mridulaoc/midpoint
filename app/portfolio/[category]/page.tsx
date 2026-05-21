@@ -1,3 +1,4 @@
+export const revalidate = 0;
 import Image from "next/image";
 import { getImages } from "../../lib/getImages";
 import Link from "next/link";
